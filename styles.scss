@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding-top: 5vh;
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 3vw;
+}
+
+body {
+  width: 100vw;
+  min-width: 440px;
+  min-height: 500px;
+  background-color: rgb(125, 132, 100);
+  padding-bottom: 15vh;
+  overflow: hidden;
+}
+
+.chessboard {
+  font-family: "Merriweather", serif;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  min-width: 421px;
+  aspect-ratio: 1 /1;
+}
+
+.line-eight,
+.line-seven,
+.line-six,
+.line-five,
+.line-four,
+.line-three,
+.line-two,
+.line-one {
+  display: flex;
+  background-color: rgb(39, 55, 45, 0.4);
+}
+
+.top,
+.bottom {
+  display: flex;
+  font-size: 1em;
+  background-color: rgb(39, 55, 45, 0.4);
+}
+
+.invert {
+  transform: scale(-1);
+}
+
+.white {
+  background-color: rgb(225, 224, 205);
+  width: 20%;
+  aspect-ratio: 1 /1;
+}
+
+.black {
+  background-color: rgb(9, 25, 9);
+  width: 20%;
+  aspect-ratio: 1 / 1;
+}
+
+.top-tiles,
+.bottom-tiles {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  padding: 2px;
+  width: 20%;
+  background-color: rgb(39, 55, 45, 0.4);
+}
+
+.side {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  padding: 2px;
+  background-color: rgb(39, 55, 45, 0.4);
+  width: 5%;
+}
+
+.line-one > .white,
+.line-one > .black,
+.line-two > .white,
+.line-two > .black {
+  display: flex;
+  flex-wrap: nowrap;
+  color: rgb(144, 135, 100);
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  aspect-ratio: 1 /1;
+}
+
+.line-eight > .white,
+.line-eight > .black,
+.line-seven > .black,
+.line-seven > .white {
+  display: flex;
+  flex-wrap: nowrap;
+  color: rgb(84, 72, 19);
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 /1;
+  font-size: 2em;
+}
+
+.top > .side,
+.bottom > .side {
+  width: 5%;
+}
