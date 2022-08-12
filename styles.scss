@@ -1,4 +1,6 @@
 @import "./partials/chess-tiles";
+@import "./partials/keyframes";
+@import "./partials/media-queries"
 
 * {
   margin: 0;
@@ -7,12 +9,14 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #262b17, #7a7f68, #262b17);
+  background-size: 500%;
+  background-image: linear-gradient(45deg, #a7aa9d, #242a13);
   padding-bottom: 15vh;
   overflow: hidden;
   width: 100vw;
   min-width: 440px;
   min-height: 500px;
+  animation: background-animation 2s infinite alternate;
 }
 
 h1 {
@@ -33,8 +37,13 @@ h1 {
   padding: 20px;
   max-width: 500px;
   min-width: 421px;
+  overflow: hidden;
+}
+
+.chessboard:hover {
+  animation: change-player 3s forwards;
 }
 
 .invert {
-  transform: scale(-1);
+  transform: scale(1, -1);
 }

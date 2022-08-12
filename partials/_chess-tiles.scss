@@ -7,14 +7,12 @@
 .line-two,
 .line-one {
   display: flex;
-  background-color: rgb(39, 55, 45);
 }
 
 .top,
 .bottom {
   display: flex;
   font-size: 1em;
-  background-color: rgb(39, 55, 45);
 }
 
 .white {
@@ -58,11 +56,10 @@
 .line-two > .black {
   display: flex;
   flex-wrap: nowrap;
-  color: rgb(144, 135, 100);
-  font-size: 2em;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  color: rgb(144, 135, 100);
+  font-size: 2em;
   aspect-ratio: 1 /1;
 }
 
@@ -72,11 +69,11 @@
 .line-seven > .white {
   display: flex;
   flex-wrap: nowrap;
-  color: rgb(84, 72, 19);
   justify-content: center;
   align-items: center;
-  aspect-ratio: 1 /1;
+  color: rgb(84, 72, 19);
   font-size: 2em;
+  aspect-ratio: 1 /1;
 }
 
 .top > .side,
