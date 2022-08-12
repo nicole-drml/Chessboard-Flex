@@ -6,20 +6,21 @@
   box-sizing: border-box;
 }
 
-h1.title {
-  padding-top: 5vh;
-  font-family: "Lora", serif;
-  text-align: center;
-  font-size: 50px;
-}
-
 body {
-  width: 100vw;
-  min-width: 440px;
-  min-height: 500px;
-  background-image: linear-gradient(to right, #7d8464,#3e4231);
+  background-image: linear-gradient(to right, #262b17, #7a7f68, #262b17);
   padding-bottom: 15vh;
   overflow: hidden;
+  width: 100vw;
+min-width: 440px;
+min-height: 500px;
+}
+
+
+h1 {
+  margin-top: 35px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 3vw30px;
 }
 
 .chessboard {
@@ -29,21 +30,14 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
-  min-width: 421px;
   aspect-ratio: 1 /1;
+  padding: 20px;
+  max-width: 500px;
+min-width: 421px;
 }
+
 
 .invert {
   transform: scale(-1);
 }
 
-
-h2.checkmate {
-  padding-top: 7vh;
-  padding-bottom: 5vh;
-  font-family: "Press Start 2P", cursive;
-  text-align: center;
-  font-size: 20px;
-  color: #080202;
-}
