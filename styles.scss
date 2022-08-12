@@ -1,4 +1,4 @@
-@import './partials/chess-tiles';
+@import "./partials/chess-tiles";
 
 * {
   margin: 0;
@@ -11,16 +11,15 @@ body {
   padding-bottom: 15vh;
   overflow: hidden;
   width: 100vw;
-min-width: 440px;
-min-height: 500px;
+  min-width: 440px;
+  min-height: 500px;
 }
-
 
 h1 {
   margin-top: 35px;
   text-align: center;
-  font-family: 'Lora', serif;
-  font-size: 3vw30px;
+  font-family: "Lora", serif;
+  font-size: 4vh;
 }
 
 .chessboard {
@@ -33,11 +32,9 @@ h1 {
   aspect-ratio: 1 /1;
   padding: 20px;
   max-width: 500px;
-min-width: 421px;
+  min-width: 421px;
 }
-
 
 .invert {
   transform: scale(-1);
 }
-
