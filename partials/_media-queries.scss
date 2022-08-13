@@ -1,50 +1,48 @@
-
 @media (min-width: 1000px) {
-    h1 {
-      font-size: 5vw;
-    }
-    .chessboard {
-      width: 500px;
-    }
+  h1 {
+    font-size: 5vw;
   }
-  
-  @media (max-width: 525px) {
-    .chessboard {
-      width: 100px;
-      aspect-ratio: 1 / 1;
-    }
+  .chessboard {
+    width: 500px;
   }
-  
-  
-  
-  @media (max-height: 600px) {
-    .chessboard {
-      width: 100px;
-      aspect-ratio: 1 / 1;
-    }
+}
+
+@media (max-width: 525px) {
+  .chessboard {
+    width: 100px;
+    aspect-ratio: 1 / 1;
   }
-  
-  
-  @media (max-height: 520px) {
-    h1 {
-      font-size: 5vh;
-    }
-    .chessboard {
-      width: 20px;
-    }
-    .black, .white {
-      width: 10%;
-    }
-    .top-tiles, .bottom-tiles {
-      width: 10%;
-    }
+}
+
+@media (max-height: 600px) {
+  .chessboard {
+    width: 100px;
+    aspect-ratio: 1 / 1;
   }
-  
-  @media (max-height: 450px) {
-    h1 {
-      font-size: 5vh;
-    }
-    .chessboard {
-      width: 10px;
-    }
+}
+
+@media (max-height: 520px) {
+  h1 {
+    font-size: 5vh;
   }
+  .chessboard {
+    width: 20px;
+  }
+  .black,
+  .white {
+    width: 10%;
+  }
+  .top-tiles,
+  .bottom-tiles {
+    width: 10%;
+  }
+}
+
+@media (max-height: 450px) {
+  h1 {
+    font-size: 5vh;
+  }
+  .chessboard {
+    width: 10px;
+  }
+}

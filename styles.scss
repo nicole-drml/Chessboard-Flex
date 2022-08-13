@@ -1,12 +1,12 @@
-@import "./partials/chess-tiles";
-@import "./partials/keyframes";
-@import "./partials/media-queries";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+@import "./partials/chess-tiles";
+@import "./partials/keyframes";
+@import "./partials/media-queries";
 
 body {
   background-size: 500%;
@@ -38,6 +38,7 @@ h1 {
   max-width: 500px;
   min-width: 421px;
   overflow: hidden;
+  animation: back-player 3s forwards;
 }
 
 .chessboard:hover {

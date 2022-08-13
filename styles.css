@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .line-eight,
 .line-seven,
 .line-six,
@@ -108,6 +114,22 @@
     transform: rotateX(180deg);
   }
 }
+@-webkit-keyframes back-player {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes back-player {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
 @media (min-width: 1000px) {
   h1 {
     font-size: 5vw;
@@ -135,10 +157,12 @@
   .chessboard {
     width: 20px;
   }
-  .black, .white {
+  .black,
+.white {
     width: 10%;
   }
-  .top-tiles, .bottom-tiles {
+  .top-tiles,
+.bottom-tiles {
     width: 10%;
   }
 }
@@ -150,12 +174,6 @@
     width: 10px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-size: 500%;
   background-image: linear-gradient(45deg, #a7aa9d, #242a13);
@@ -187,6 +205,8 @@ h1 {
   max-width: 500px;
   min-width: 421px;
   overflow: hidden;
+  -webkit-animation: back-player 3s forwards;
+          animation: back-player 3s forwards;
 }
 
 .chessboard:hover {
